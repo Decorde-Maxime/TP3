@@ -1,8 +1,19 @@
 package fr.univamu.iut.partie2;
+import java.time.LocalDate;
 
 /**
  * Created by d16013755 on 08/11/17.
  */
-public class Livre extends Document{
-    private String auteur;
+public class Livre extends Document {
+    private String titre;
+    private LocalDate dateRetour;
+
+    public Livre(String titre) {
+        super(titre);
+    }
+
+    @Override
+    public void accepter() {
+
+    }
 }
